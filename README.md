@@ -13,6 +13,11 @@ python3 -m http.server 8000
 
 Then open <http://localhost:8000/>.
 
+## Deployment
+
+See [DEPLOYMENT.md](DEPLOYMENT.md) for the first-publish steps, GitHub Pages
+settings, custom-domain checks, HTTPS setup, and App Store Connect URLs.
+
 ## Public URLs
 
 - Support: <https://aligner-tracker.alecbytes.com/support/>
