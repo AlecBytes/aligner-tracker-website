@@ -336,6 +336,11 @@ p {
   color: var(--muted);
 }
 
+.local-first-highlight {
+  grid-column: 1 / -1;
+  background: var(--accent-soft);
+}
+
 .founder-note {
   margin-block: 2.5rem;
   padding: clamp(1.25rem, 3vw, 1.75rem);
