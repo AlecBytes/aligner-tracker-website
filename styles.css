@@ -282,6 +282,82 @@ p {
   margin-left: 0.2rem;
 }
 
+.features-cta {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1.25rem;
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--accent);
+  border-radius: 0.6rem;
+  background: var(--accent-soft);
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.features-cta:hover {
+  border-color: var(--accent-strong);
+}
+
+.features-page h1 {
+  font-size: clamp(2rem, 5.5vw, 3.25rem);
+}
+
+.feature-highlights,
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.feature-highlights {
+  margin-block: 2rem;
+}
+
+.feature-highlight {
+  padding: clamp(1.25rem, 3vw, 1.75rem);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
+  border-radius: 1rem;
+  background: var(--surface);
+}
+
+.feature-highlight p,
+.feature-item p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.founder-note {
+  margin-block: 2.5rem;
+  padding: clamp(1.25rem, 3vw, 1.75rem);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 0.75rem 0.75rem 0;
+  background: var(--accent-soft);
+}
+
+.founder-note p {
+  margin-bottom: 0;
+}
+
+.feature-grid {
+  gap: 0 2rem;
+}
+
+.feature-item {
+  padding-block: 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.feature-item h3 {
+  margin: 0 0 0.5rem;
+}
+
+.features-next {
+  margin: 2rem 0 0;
+}
+
 .document-page {
   max-width: 44rem;
 }
@@ -371,7 +447,9 @@ p {
     width: 100%;
   }
 
-  .link-grid {
+  .link-grid,
+  .feature-highlights,
+  .feature-grid {
     grid-template-columns: 1fr;
   }
 

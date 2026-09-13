@@ -1,6 +1,6 @@
 # Aligner Tracker website
 
-Static support and privacy pages for Aligner Tracker, published at
+Static features, support, and privacy pages for Aligner Tracker, published at
 <https://aligner-tracker.alecbytes.com/>.
 
 ## Local preview
@@ -20,6 +20,7 @@ settings, custom-domain checks, HTTPS setup, and App Store Connect URLs.
 
 ## Public URLs
 
+- Features: <https://aligner-tracker.alecbytes.com/features/>
 - Support: <https://aligner-tracker.alecbytes.com/support/>
 - Privacy: <https://aligner-tracker.alecbytes.com/privacy/>
 
