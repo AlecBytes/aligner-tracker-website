@@ -136,7 +136,23 @@ archive and the public pages pass verification, use:
 
 - **Support URL:** `https://aligner-tracker.alecbytes.com/support/`
 - **Privacy Policy URL:** `https://aligner-tracker.alecbytes.com/privacy/`
-- **Marketing URL:** leave blank for version 1.0
+- **Marketing URL:** use `https://aligner-tracker.alecbytes.com/` once the app
+  and website are public; otherwise leave it blank.
+
+### App Store website link at launch
+
+The website currently displays `Coming soon to the App Store.` as plain text on
+the home and Features pages. Once the App Store product page is public:
+
+1. Download Apple's official localized `Download on the App Store` badge from
+   the App Store marketing resources.
+2. Store the badge image in the website's `assets/` directory.
+3. Replace both availability status lines with the badge linked directly to the
+   app's public App Store product URL.
+4. Verify the link and badge on mobile and desktop in light and dark mode.
+
+Do not publish a placeholder link, an empty link, or an unofficial badge before
+the public product URL is available.
 
 ## Recommended domain security
 
