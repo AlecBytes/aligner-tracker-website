@@ -143,6 +143,44 @@ a:focus-visible {
   text-align: center;
 }
 
+.home-page {
+  width: min(100% - 2rem, 72rem);
+  padding-top: clamp(1rem, 2.67vw, 1.83rem);
+}
+
+.aligner-frame {
+  position: relative;
+  isolation: isolate;
+  max-width: 70rem;
+  min-height: min(57.32vw, 39.81rem);
+  margin-inline: auto;
+}
+
+.aligner-arch {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 50%;
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: translateX(-50%);
+  pointer-events: none;
+  user-select: none;
+}
+
+.aligner-frame .hero {
+  padding: clamp(6rem, 18vw, 12.75rem) clamp(1rem, 18vw, 10.5rem) 2rem;
+}
+
+.aligner-frame h1 {
+  width: max-content;
+  max-width: calc(100vw - 2rem);
+  margin-inline: auto;
+  font-size: clamp(1.65rem, 6vw, 3.75rem);
+  white-space: nowrap;
+}
+
 .hero-icon {
   display: block;
   margin: 0 auto 1.5rem;
@@ -203,7 +241,8 @@ p {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
-  margin-top: clamp(3rem, 8vw, 5rem);
+  width: min(100%, 48rem);
+  margin: clamp(1rem, 2.5vw, 1.75rem) auto 0;
 }
 
 .link-card {
@@ -334,6 +373,15 @@ p {
 
   .link-grid {
     grid-template-columns: 1fr;
+  }
+
+  .aligner-frame {
+    min-height: 0;
+  }
+
+  .aligner-frame .hero {
+    padding-top: clamp(5.25rem, 27vw, 8.5rem);
+    padding-inline: clamp(0rem, 8vw, 2.5rem);
   }
 
   .footer-inner {
