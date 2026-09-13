@@ -13,6 +13,16 @@ python3 -m http.server 8000
 
 Then open <http://localhost:8000/>.
 
+If port 8000 is already in use, choose another port:
+
+```sh
+python3 -m http.server 8001
+```
+
+Then open <http://localhost:8001/>. To reuse port 8000, find the process that
+owns it with `lsof -nP -iTCP:8000 -sTCP:LISTEN` and stop that process if it is
+an old preview server.
+
 ## Deployment
 
 See [DEPLOYMENT.md](DEPLOYMENT.md) for the first-publish steps, GitHub Pages
