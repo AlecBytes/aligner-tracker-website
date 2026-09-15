@@ -106,8 +106,10 @@ Open these URLs in a private browser window and on an iPhone:
 
 ```text
 https://aligner-tracker.alecbytes.com/
+https://aligner-tracker.alecbytes.com/features/
 https://aligner-tracker.alecbytes.com/support/
 https://aligner-tracker.alecbytes.com/privacy/
+https://aligner-tracker.alecbytes.com/support-aligner-tracker/
 ```
 
 Confirm that:
@@ -116,15 +118,18 @@ Confirm that:
 - Support and Privacy link to one another;
 - the support email opens a message to `support@alecbytes.com`;
 - the pages remain readable at phone width and in light and dark appearance;
+- the contribution page labels the monthly option as recurring and links to Stripe's terms;
 - disabling JavaScript does not affect the site; and
-- reloading `/support/` and `/privacy/` directly does not return a 404.
+- reloading each route directly does not return a 404.
 
 Optional command-line verification:
 
 ```sh
 curl --fail --head https://aligner-tracker.alecbytes.com/
+curl --fail --head https://aligner-tracker.alecbytes.com/features/
 curl --fail --head https://aligner-tracker.alecbytes.com/support/
 curl --fail --head https://aligner-tracker.alecbytes.com/privacy/
+curl --fail --head https://aligner-tracker.alecbytes.com/support-aligner-tracker/
 ```
 
 Each command should report a successful `2xx` status.

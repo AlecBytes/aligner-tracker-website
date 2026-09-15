@@ -174,11 +174,9 @@ a:focus-visible {
 }
 
 .aligner-frame h1 {
-  width: max-content;
-  max-width: calc(100vw - 2rem);
+  max-width: 100%;
   margin-inline: auto;
   font-size: clamp(1.65rem, 6vw, 3.75rem);
-  white-space: nowrap;
 }
 
 .hero-icon {
@@ -486,6 +484,11 @@ p {
 
 .support-links .features-cta {
   margin-top: 0;
+}
+
+.support-links + p {
+  margin-top: 1.25rem;
+  margin-bottom: 0;
 }
 
 .site-footer {
