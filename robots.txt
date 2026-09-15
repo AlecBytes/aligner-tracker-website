@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aligner-tracker.alecbytes.com/sitemap.xml
